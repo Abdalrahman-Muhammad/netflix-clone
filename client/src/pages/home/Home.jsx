@@ -21,7 +21,7 @@ export const Home = ({ type }) => {
               token:
                 "Bearer" +
                 " " +
-                "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MzNmOWNkMWI3ZmQxMzAxZDVjOGJjMCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5Nzk3MjI5MCwiZXhwIjoxNjk4NDA0MjkwfQ.UGyVXplgXrMs8SaVyvMwCC4G1couPVlE28TMv4cL8sI",
+                JSON.parse(localStorage.getItem("user")).accessToke,
             },
           }
         );

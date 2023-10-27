@@ -33,7 +33,7 @@ export const Home = () => {
         const res = await axios.get(`${BASE_URL}/users/stats`, {
           headers: {
             token:
-              "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MzNmOWNkMWI3ZmQxMzAxZDVjOGJjMCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY5Nzk3MjI5MCwiZXhwIjoxNjk4NDA0MjkwfQ.UGyVXplgXrMs8SaVyvMwCC4G1couPVlE28TMv4cL8sI",
+              "Bearer " + JSON.parse(localStorage.getItem("user")).accessToke,
           },
         });
         const itemList = res.data.sort((a, b) => a._id - b._id);

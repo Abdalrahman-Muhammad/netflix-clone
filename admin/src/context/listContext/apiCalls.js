@@ -41,20 +41,6 @@ export const createList = async (list, dispatch) => {
     dispatch(createListFailure(error));
   }
 };
-// export const updateMovie = async (movie, dispatch) => {
-//   dispatch(updateMovieStart());
-
-//   try {
-//     const res = await axios.put(`${BASE_URL}/movies/${movie._id}`, movie, {
-//       headers: {
-//         token: "Bearer " + JSON.parse(localStorage.getItem("user")).accessToke,
-//       },
-//     });
-//     dispatch(updateMovieSuccess(res.data));
-//   } catch (error) {
-//     dispatch(updateMovieFailure(error));
-//   }
-// };
 
 export const deleteList = async (id, dispatch) => {
   dispatch(deleteListStart());
